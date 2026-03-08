@@ -1,0 +1,49 @@
+# FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Database (PostgreSQL only)
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+alembic==1.12.1
+psycopg2-binary==2.9.9
+greenlet==3.0.3
+
+# AWS Services
+boto3==1.34.34
+botocore==1.34.34
+aioboto3==12.3.0
+
+# AWS SageMaker (optional - only needed for actual SageMaker calls)
+# sagemaker==2.199.0  # Commented out - not needed for mock testing
+
+# AWS Bedrock (via boto3)
+# Bedrock is accessed through boto3 client
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Configuration
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP Client
+aiohttp==3.9.1
+httpx==0.25.2
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+pandas==2.1.4
+scikit-learn==1.3.2
+xgboost==2.0.3
+numpy==1.26.2
+
+# Development and Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Environment variables
+python-dotenv==1.0.0

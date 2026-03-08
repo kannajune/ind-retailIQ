@@ -1,0 +1,102 @@
+# Reference folders - DO NOT COMMIT
+reference_ev-network-app/
+reference_ev-network-backend/
+
+# Private configuration - NEVER COMMIT
+.private-config/
+private-config/
+.secrets/
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Database
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+build/
+coverage/
+
+# AWS Deployment - Sensitive Data
+aws-deployment/*.json
+aws ecs describe-task-definition --task-definition retail-ai-backend-task:6 --query 'taskDefinition.containerDefinitions[0].environment[?name==]' --outputdeployment/*.json.template
+aws-deployment/.env*
+aws-deployment/*-log.txt
+
+.aws-deployment/
+.docs/
